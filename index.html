@@ -1,0 +1,916 @@
+<script>
+function Hero(typeHero)	{
+  var i;
+  var x = document.getElementsByClassName("hero") ;
+  for (i = 0; i < x.length; i++)  {
+    x[i].style.display = "none";
+  }
+  document.getElementById(typeHero).style.display = "block" ;
+}
+</script>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="w3/w3.css">
+<p>
+<div class="w3-container w3-indigo">
+	<img src="header2.png" width="100%">
+	<div class="w3-bar w3-blue w3-card-4">
+		<button class="w3-bar-item w3-button" onclick="Hero('000')">Home</button>
+		<div class="w3-dropdown-hover">
+			<button class="w3-button">Hero Normal</button>
+			<div class="w3-dropdown-content w3-bar-block w3-card-4">
+				<button class="w3-bar-item w3-button" onclick="Hero('001')">Iron Knight</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('002')">Captain Hook</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('003')">Cowboy</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('004')">Fire Mage</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('005')">Cyber Medic</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('006')">Savage Berseker</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('007')">Robin Hood</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('008')">Crazy Miner</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('009')">Ice Mage</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('010')">Infantry</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('011')">Space Trooper</button>
+			</div>
+		</div>
+
+		<div class="w3-dropdown-hover">
+			<button class="w3-button">Hero Premium</button>
+			<div class="w3-dropdown-content w3-bar-block w3-card-4">
+				<button class="w3-bar-item w3-button" onclick="Hero('030')">Sol Badguy</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('032')">Special Force</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('035')">Chaos Dahlia</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('037')">Jin Kisaragi</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('039')">Kung Fu Master</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('041')">Exorcist</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('043')">Magic Lancer</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('048')">Priest</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('050')">Ragna</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('052')">Baek Dong Su</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('054')">Hazama</button>
+			</div>
+		</div>
+		
+		<div class="w3-dropdown-hover">
+			<button class="w3-button">Hero Rare</button>
+			<div class="w3-dropdown-content w3-bar-block w3-card-4">
+				<button class="w3-bar-item w3-button" onclick="Hero('078')">Zhuge Liang</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('079')">Chi Master</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('086')">Michael</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('088')">Gumiho</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('091')">Succubus</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('096')">Monk</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('099')">Skadi</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('102')">Vampire</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('105')">Devil</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('106')">Maid</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('107')">Flash</button>
+			</div>
+		</div>
+		
+		<div class="w3-dropdown-hover">
+			<button class="w3-button">Hero Unique</button>
+			<div class="w3-dropdown-content w3-bar-block w3-card-4">
+				<button class="w3-bar-item w3-button" onclick="Hero('153')">Strider</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('163')">Jin Sasinmu</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('169')">Mephisto</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('178')">Uriel</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('184')">Stranger</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('192')">Azazel</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('197')">Automaton</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('204')">Change On</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('209')">Hanzo</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('212')">Omen</button>
+				<button class="w3-bar-item w3-button" onclick="Hero('216')">Midnight</button>
+			</div>
+		</div>
+		
+		<button class="w3-bar-item w3-button w3-right" onclick="Hero('999')">Profile</button>
+	</div>
+</div>
+
+	<div id="000" class="w3-container hero w3-blue-gray">
+		<p>
+		<div class="w3-panel w3-card-4 w3-light-blue">
+			<center>
+			<h1>Lost Saga</h1>
+		</div>
+		<table><center><h3>
+		<tr><td><div class="w3-panel w3-card-4 w3-blue">
+			<img src="570520221104042739.png" width="100%">
+		</div><td width="50%"><p>Lost Saga adalah game online bebas untuk dimainkan dan berjenis 3D Casual Fighting. Permainan ini dikembangkan oleh IO Entertainment dari Korea Selatan. Lost Saga secara resmi merilis layanan mereka di Amerika Serikat pada tanggal 17 November 2009, melalui pengembang OGPlanet, sedangkan Z8Games menjadi hos tetap sejak tanggal 18 Desember 2013.</p>
+		</h3></center></table>
+		</p>
+	</div>
+  
+	<div id="001" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-panel w3-card-4 w3-light-blue">
+			<h2>Iron Knight</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Iron Knight is a Melee type hero, able to stab enemies with his sword and easily stab !!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<center>
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/001(1).png" width="50%"><td ><center><img src="Gambar Hero/001(2).png" width="50%">
+			</center>
+			</table>
+			</center>
+		</div>
+		</center></p>
+	</div>
+
+	<div id="002" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Captain Hook</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Captain Hook is a Special Hero, able to pick up bombs per combo !!!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<center>
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/002(1).png" width="50%"><td ><center><img src="Gambar Hero/002(2).png" width="50%">
+			</center>
+			</table>
+			</center>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="003" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Cowboy</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Cowboy is a Ranged Hero, able to shoot enemies while falling or lying down !!!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<center>
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/003(1).png" width="50%"><td ><center><img src="Gambar Hero/003(2).png" width="50%">
+			</center>
+			</table>
+			</center>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="004" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Fire Mage</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Fire Mage is a type of Magic Hero, able to cast fire magic, the enemy is strong !!!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/004(1).png" width="50%"><td ><center><img src="Gambar Hero/004(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="005" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Cyber Medic</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Cyber ​​Medic is a type of Magic Hero, can help and add blood to your friends !!!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/005(1).png" width="50%"><td ><center><img src="Gambar Hero/005(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="006" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Savage Berserker</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Savage Berserker is a Melee type hero that can easily penetrate enemy armor and combo !!!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/006(1).png" width="50%"><td ><center><img src="Gambar Hero/006(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="007" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Robin Hood</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Robin Hood is a Ranged type hero that can cause quite a lot of damage !!!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/007(1).png" width="50%"><td ><center><img src="Gambar Hero/007(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="008" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Crazy Miner</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Crazy Miner is a type of Special Hero, able to place bombs and harass the enemy !!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/008(1).png" width="50%"><td ><center><img src="Gambar Hero/008(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="009" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Ice Mage</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Ice Mage is a type of magic hero, able to release ice on the lying enemy !!!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/009(1).png" width="50%"><td ><center><img src="Gambar Hero/009(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="010" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Infantry</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Army Footman is a type of ranged hero that can cause quite high damage to enemies !!!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/010(1).png" width="50%"><td ><center><img src="Gambar Hero/010(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="011" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Space Trooper</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Space Trooper is a ranged hero that is suitable for swap combo !!!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/011(1).png" width="50%"><td ><center><img src="Gambar Hero/011(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="030" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Sol Badguy</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Sol Badguy utilizes his sword Fireseal for combos, air dashes and many skills that involve air attacks. He's a premium hero specializing in melee combos.</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/030(1).png" width="50%"><td ><center><img src="Gambar Hero/030(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="032" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Special Force</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Special Force is a mercenary who introduced the characters appearing in Special Force developed by'Dragon Fly' through a formal license agreement.</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/032(1).png" width="50%"><td ><center><img src="Gambar Hero/032(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="035" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Chaos Daliah</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Chaos Daliah is a character type Premium Hero, warlord, cursed bow .. !!!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/035(1).png" width="50%"><td ><center><img src="Gambar Hero/035(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="037" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Jin Kisaragi</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Jin Kisaragi, wielder of Yukianesa, is specialized in# ice elemental attacks such as Ice Fang and Artic Blade. Jin Kisaragi is a Premium Hero that has ability to combo while freezing his enemies.</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/037(1).png" width="50%"><td ><center><img src="Gambar Hero/037(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="039" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Kung Fu Master</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Xiao Long is a fast & versatile Premium Hero that uses nunchaku as main weapon</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/039(1).png" width="50%"><td ><center><img src="Gambar Hero/039(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="041" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Exorcist</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Exorcist controls the Luna Blade that guards the Exorcist. The Exorcist also uses Tai Chi so he can channel his abilities better</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/041(1).png" width="50%"><td ><center><img src="Gambar Hero/041(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="043" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Magic Lancer</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Magic Lancers can imbue elementals to his/her weapon to cause various effects. Also they are masters of cloning techniques that can confuse their foes in the battle fields.</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/043(1).png" width="50%"><td ><center><img src="Gambar Hero/043(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="048" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Priest</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>The main protagonist in korean comic, Priest, uses a knife and guns as main weapon. Priest is versatile Hero that excels at both melee and range.</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/048(1).png" width="50%"><td ><center><img src="Gambar Hero/048(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="050" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Ragna</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>The Main Hero from Blazblue series has a wide variety of attack patterns to help him rush in and attack aggressively.</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/050(1).png" width="50%"><td ><center><img src="Gambar Hero/050(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="052" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Baek Dong Su</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Straight from the Korean manga, Baek Dongsu, Swordsman Baek is the sword weilding fighter who brings his own style of revenge to the Time Gate</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/052(1).png" width="50%"><td ><center><img src="Gambar Hero/052(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="054" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Hazama</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Hazama is a premium hero from BlazBlue. Quick, nimble and highly mobile. Hazama will pummel his opponents.</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/054(1).png" width="50%"><td ><center><img src="Gambar Hero/054(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="078" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Zhuge Liang</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Zhuge Liang is a magic hero that can summon the wind to attack !!!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/078(1).png" width="50%"><td ><center><img src="Gambar Hero/078(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="079" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Chi Master</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Chi Master is a ranged rare hero who utilizes ki energy to take down enemies.</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/079(1).png" width="50%"><td ><center><img src="Gambar Hero/079(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="086" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Michael</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Michael is a type of Hero Melee that can capture the enemy in the desired direction !!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/086(1).png" width="50%"><td ><center><img src="Gambar Hero/086(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="088" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Gumiho</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Gumiho is a kind of Melee Hero that can attack enemies with claws and multiple hits !!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/088(1).png" width="50%"><td ><center><img src="Gambar Hero/088(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="091" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Succubus</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Succubus is a Special type Hero that attacks enemies with a whip and can easily drop !!!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/091(1).png" width="50%"><td ><center><img src="Gambar Hero/091(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="096" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Monk</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Monk is a Melee type hero that attacks enemies with fists and staff and has a variety of combos !!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/096(1).png" width="50%"><td ><center><img src="Gambar Hero/096(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="099" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Skadi</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Skadi is a Special type Hero that uses ice in combat !!!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/099(1).png" width="50%"><td ><center><img src="Gambar Hero/099(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="102" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Vampire</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Vampire is a type of Hero Melee that can be used in a variety of combos and is very long and suck blood as well !!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/102(1).png" width="50%"><td ><center><img src="Gambar Hero/102(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="105" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Devil</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Devil is a Melee type Hero that attacks enemies with overwhelming and fiery damage !!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/105(1).png" width="50%"><td ><center><img src="Gambar Hero/105(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="106" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Maid</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Maid is a Melee type hero that uses a broom in battle. And can make enemies fall easily !!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/106(1).png" width="50%"><td ><center><img src="Gambar Hero/106(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="107" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Flash</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Flash is a Melee type hero that attacks enemies with the speed of light !!</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/107(1).png" width="50%"><td ><center><img src="Gambar Hero/107(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="153" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Strider</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Strider is a Hero Unique Melee type, capable of dealing damage to enemies very quickly. Simply put, it's the speed of light</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/153(1).png" width="50%"><td ><center><img src="Gambar Hero/153(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="163" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Jin Sasinmu</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Jin Sasinmu is the 2nd unique hero, and the 163th hero overall. It is the master of Four Symbols; Azure Dragon (Seiryu), Vermilion Bird (Suzaku), White Tiger (Byakko), and Black Turtle (Ganbu).</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/163(1).png" width="50%"><td ><center><img src="Gambar Hero/163(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="169" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Mephisto</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Mephisto are Unique Melee type that has the ability to inflict damage on enemies. continually An attack skill that can loop continuously</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/169(1).png" width="50%"><td ><center><img src="Gambar Hero/169(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="178" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Uriel</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Uriel is classified as a Unique Melee type. It has the ability to perform aerial combos and also deal Fall DMG.</p>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/178(1).png" width="50%"><td ><center><img src="Gambar Hero/178(2).png" width="50%">
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="184" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Stranger</h2>
+		</div>
+		
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/184(1).png" width="50%"><td width="50%" ><div class="w3-panel w3-green w3-card-4">
+			<p>Stranger is classified as Unique. Ranged weave has the ability to create runes to attack. This combo is quite versatile. Makes it seem difficult enough to catch the way.</p>
+			</div>
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="192" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Azazel</h2>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/192(1).png" width="50%"><td width="50%"><div class="w3-panel w3-green w3-card-4">
+			<p>Azazel is classified as a Unique Melee type with the ability to combo in the sky</p>
+			</div>
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="197" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Automaton</h2>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/197(1).png" width="50%"><td width="50%"><div class="w3-panel w3-green w3-card-4">
+			<p>Automaton are Unique Melee type with the ability to capture enemies. It's quite brutal to capture your enemies</p>
+			</div>
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="204" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Change On</h2>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/204(1).png" width="50%"><td width="50%"><div class="w3-panel w3-green w3-card-4">
+			<p>The change-on is classified as Unique, Special type, has the ability to attack enemies in various ways</p>
+			</div>
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="209" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Hanzo</h2>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/209(1).png" width="50%"><td width="50%"><div class="w3-panel w3-green w3-card-4">
+			<p>Hanzo is a Unique Melee type with the ability to attack enemies very quickly. It comes in the same style as the Kage Ninja Evo, but this one comes in an upgraded version</p>
+			</div>
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="212" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Omen</h2>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/212(1).png" width="50%"><td width="50%"><div class="w3-panel w3-green w3-card-4">
+			<p>Omen is classified as Unique, Special type, capable of attacking the middle enemy in many combos. With an attack skill that has the ability to reset mid-air attacks, Omen can loop combos up to 2-3 rounds, jump attacks up to 5 times, and do Fall DMG fairly easily</p>
+		</div>
+			</center>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="216" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Midnight</h2>
+		</div>
+		<div class="w3-panel w3-green w3-card-4">
+			<p>Midnight are Hero Unique Special type that has the ability to attack enemies with up to 3 different weapons. Gauntlets, Claws, Dual Guns, Dual Sicklesp>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td><img src="Gambar Hero/216(1).png" width="50%"><td width="50%"><div class="w3-panel w3-green w3-card-4">
+			<p>Midnight are Hero Unique Special type that has the ability to attack enemies with up to 3 different weapons. Gauntlets, Claws, Dual Guns, Dual Sickles</p>
+			</center>
+			</div>
+			</table>
+		</div>
+		</center></p>
+	</div>
+	
+	<div id="999" class="w3-container hero w3-blue-gray" style="display:none">
+		<center><p>
+		<div class="w3-bar w3-card-4 w3-light-blue">
+			<h2>Profile</h2>
+		</div>
+		<div class="w3-panel w3-cyan w3-card-4">
+			<table>
+			<center>
+			<tr><td rowspan="3"><center><img src="1706332680986.png" width="60%"><h6>SC = @UnfamousRadish</center><td width="50%"><h2>Nama = M. Ilyas Fachrezy N.
+			<tr><td><h2>NIM = 10123027
+			<tr><td><h2>Kelas = IF 1 
+			</center>
+			</table>
+		</div>
+	</div>
+	
+</p>
